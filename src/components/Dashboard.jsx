@@ -51,7 +51,7 @@ const Dashboard = () => {
           </div>
         )}
         {error && <p className="error-message">{error}</p>}
-        {users.length > 0 && (
+        {users.length > 0 && userInfo.role === "admin" && (
           <Table striped className="dashboard-table">
             <thead>
               <tr>
